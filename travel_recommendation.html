@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <style>
+        /* Style for the body with a background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar input[type="text"] {
+            padding: 6px;
+            margin-right: 10px;
+            border: none;
+        }
+
+        .navbar button {
+            padding: 6px 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style for the intro section */
+        .intro {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent background for text readability */
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* Style for the social media icons */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f0c040; /* Change color on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar section -->
+    <div class="navbar">
+        <!-- Website name/logo -->
+        <div class="logo">Travel Recommendation</div>
+
+        <!-- Navigation links -->
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+
+        <!-- Search bar and buttons -->
+        <input type="text" placeholder="Search for recommendations..." id="searchInput">
+        <button onclick="searchFunction()">Search</button>
+        <button onclick="resetFunction()">Reset</button>
+    </div>
+
+    <!-- Introduction section -->
+    <div class="intro">
+        <h1>Welcome to Travel Recommendation</h1>
+        <p>Your ultimate guide to discovering new and exciting travel destinations! Whether you're a seasoned traveler or just starting out, we provide recommendations, travel tips, and insights to help you plan the perfect trip.</p>
+        <p>Explore breathtaking landscapes, unique cultures, and hidden gems around the world with us!</p>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        &copy; 2024 Travel Recommendation. All rights reserved.
+    </footer>
+
+    <!-- Load Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Simple script to handle search and reset functions
+        function searchFunction() {
+            var searchQuery = document.getElementById("searchInput").value;
+            alert("You searched for: " + searchQuery);
+        }
+
+        function resetFunction() {
+            document.getElementById("searchInput").value = "";
+        }
+    </script>
+
+</body>
+</html>
