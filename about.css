@@ -1,0 +1,217 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a4f54;
+}
+
+/* SVG icon styling */
+.logo-container svg {
+  margin-right: 15px;
+}
+
+/* Logo text styling */
+.logo-text {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a4f54;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo h1 {
+  margin-left: 10px;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin: 0 10px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+/* Social Icons */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  background-color: #00796b;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #005c50;
+}
+
+/* About Us Hero Section */
+.about-hero {
+  background: url('city-view.jpg') no-repeat center center/cover;
+  height: 70vh; /* Adjust as needed to fit design */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Transparent Background for About Description */
+.about-description {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  padding: 20px 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for pop */
+}
+
+/* Title Style */
+.about-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* Paragraph Style for the Description */
+.about-description p {
+  margin: 10px 0;
+}
+
+/* Our Team Section */
+.team-section {
+  padding: 60px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Title for the Team Section */
+.team-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Team Cards Container */
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Individual Team Card */
+.team-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Photo */
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Member Name */
+.team-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Team Member Role Description */
+.team-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Role Button */
+.role-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #005c50;
+}

@@ -1,0 +1,222 @@
+/* Resetting some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a4f54;
+}
+
+/* SVG icon styling */
+.logo-container svg {
+  margin-right: 15px;
+}
+
+/* Logo text styling */
+.logo-text {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a4f54;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo h1 {
+  margin-left: 10px;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin: 0 10px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  outline: none;
+  width: 200px;
+  transition: width 0.4s;
+}
+
+.search-bar input:focus {
+  width: 300px;
+}
+
+.search-btn,
+.clear-btn {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover,
+.clear-btn:hover {
+  background-color: #005c50;
+}
+
+.search-btn i {
+  margin-right: 5px;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-btn,
+  .clear-btn {
+    width: 100%;
+  }
+}
+
+/* Social Icons Styling */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  background-color: #00796b;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #005c50;
+}
+
+/* Hero Section Styling */
+.hero-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background: url('city-view.jpg') no-repeat center center/cover;
+  padding: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.003);
+}
+
+.hero-text-container {
+  max-width: 600px;
+  margin-left: 80px; /* Adds space between social icons and content */
+}
+
+.hero-text {
+  font-size: 72px; /* Increase or decrease as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Controls the vertical spacing between lines */
+  margin-bottom: 20px;
+  color: white;
+  padding: 15px; /* Adjust padding to increase box size */
+  display: inline-block;
+  text-align: left;
+  word-break: break-word;
+}
+
+.hero-subtext {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  padding: 10px;
+}
+
+/* Book Now Button */
+.book-now {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #005c50;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

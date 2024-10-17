@@ -1,137 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Travel Recommendation</title>
-    <style>
-        /* Body styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); /* Replace with your background image */
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 0 20px;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - TravelBloom</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo-container">
+        <!-- SVG Plane Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="50"
+          height="50"
+          fill="#00796b"
+        >
+          <path
+            d="M20.012 18v2h-20v-2h20zm3.973-13.118c.154 1.349-.884 2.615-1.927 3.491-.877.735-9.051 6.099-9.44 6.307-1.756.936-3.332 1.306-4.646 1.32-1.36.014-2.439-.354-3.144-.872l-4.784-3.977 3.742-2.373 4.203 1.445.984-.578-4.973-3.645 3.678-2.124 7.992 1.545c.744-.445 1.482-.9 2.225-1.348 1.049-.623 2.056-1.055 3.387-1.055 1.321 0 2.552.52 2.703 1.864zm-4.341.512c-.419.192-3.179 1.882-3.615 2.144l-8.01-1.55-.418.241 5.288 3.307-4.683 2.876-4.214-1.448-.69.395c.917.729 1.787 1.522 2.751 2.186 1.472.962 4.344.22 5.685-.663.9-.592 7.551-4.961 8.436-5.582.605-.431 1.797-1.414 1.824-2.152l.001-.004c-.644-.287-1.716-.041-2.355.25z"
+          />
+        </svg>
 
-        /* Navbar styling */
-        .navbar {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            padding: 10px;
-            color: white;
-            justify-content: space-between;
-        }
+        <!-- Logo Text -->
+        <h1 class="logo-text">TravelBloom</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="travel_recommendation.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Company info section styling */
-        .company-info {
-            margin-top: 50px;
-            color: white;
-        }
-
-        /* Team section styling */
-        .team-section {
-            margin-top: 50px;
-            color: white;
-        }
-
-        .team-member {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        .team-member h3 {
-            margin: 10px 0 5px 0;
-        }
-
-        .team-member p {
-            margin: 5px 0;
-        }
-
-        /* Footer styling */
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 14px;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navbar section -->
-    <div class="navbar">
-        <!-- Website name/logo -->
-        <div class="logo">Travel Recommendation</div>
-
-        <!-- Navigation links -->
-        <a href="travel_recommendation.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <!-- Company Info Section -->
-    <div class="company-info">
-        <h1>About Travel Recommendation</h1>
-        <p>Travel Recommendation was founded with the vision of helping travelers discover the best destinations, cultures, and experiences the world has to offer. Our platform provides curated travel tips, destination guides, and personalized recommendations to make your trips unforgettable.</p>
-        <p>We believe that every traveler deserves to explore the world with confidence, and we're here to make that possible with our expert insights and detailed guides.</p>
-    </div>
+    <!-- Hero Section: About Us Content -->
+    <!-- Hero Section: About Us Content -->
+    <section class="about-hero">
+      <h1 class="about-title">ABOUT US</h1>
+      <div class="about-description">
+        <p>
+          Welcome to Our Company! We are a team of passionate individuals
+          dedicated to providing excellent services/products to our customers.
+          Our mission is to <strong>provide the best experience</strong>
+          for people traveling to different destinations around the world.
+        </p>
+        <p>
+          Our values include
+          <strong
+            >integrity, innovation, customer satisfaction, and teamwork</strong
+          >. We believe in <strong>putting our customers first</strong> and
+          working together to achieve our goals.
+        </p>
+        <p>
+          Feel free to explore our website to learn more about what we offer!
+        </p>
+      </div>
+    </section>
 
-    <!-- Team Section -->
-    <div class="team-section">
-        <h2>Meet Our Team</h2>
-
+    <!-- Our Team Section -->
+    <section class="team-section">
+      <h2 class="team-title">Our Team</h2>
+      <div class="team-container">
         <!-- Team Member 1 -->
-        <div class="team-member">
-            <h3>John Doe</h3>
-            <p>CEO & Founder</p>
-            <p>John is the visionary behind Travel Recommendation, with over 15 years of experience in the travel industry. His passion for travel and deep industry knowledge helps guide the company's mission and strategy.</p>
+        <div class="team-card">
+          <img src="person-contact.svg" alt="John Doe" class="team-photo" />
+          <h3>John Doe</h3>
+          <p>John is responsible for...</p>
+          <button class="role-button">CEO</button>
         </div>
 
         <!-- Team Member 2 -->
-        <div class="team-member">
-            <h3>Jane Smith</h3>
-            <p>Chief Travel Expert</p>
-            <p>Jane has traveled to over 50 countries and is the go-to expert for our recommendations. She specializes in crafting unique travel experiences tailored to individual preferences.</p>
+        <div class="team-card">
+          <img
+            src="person-contact.svg"
+            alt="Celina Thomas"
+            class="team-photo"
+          />
+          <h3>Celina Thomas</h3>
+          <p>Celina is responsible for...</p>
+          <button class="role-button">Team Lead</button>
         </div>
 
         <!-- Team Member 3 -->
-        <div class="team-member">
-            <h3>Michael Johnson</h3>
-            <p>Marketing Manager</p>
-            <p>Michael handles all of our marketing strategies and campaigns, ensuring that travelers around the world discover the unique value of Travel Recommendation.</p>
+        <div class="team-card">
+          <img src="person-contact.svg" alt="Mike Tysen" class="team-photo" />
+          <h3>Mike Tysen</h3>
+          <p>Mike is responsible for...</p>
+          <button class="role-button">Delivery Head</button>
         </div>
-
-        <!-- Team Member 4 -->
-        <div class="team-member">
-            <h3>Sara Williams</h3>
-            <p>Lead Developer</p>
-            <p>Sara is the tech genius behind our platform, working tirelessly to make the website and mobile app seamless for our users, enabling them to get the best travel recommendations with ease.</p>
-        </div>
-    </div>
-
-    <!-- Footer section -->
-    <footer>
-        &copy; 2024 Travel Recommendation. All rights reserved.
-    </footer>
-
-</body>
+      </div>
+    </section>
+  </body>
 </html>
